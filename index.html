@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pandesal Bakery Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🥖 Pandesal Bakery Inventory</h1>
+
+  <!-- BAKERY PRODUCTS -->
+  <section class="box">
+    <h2>Pandesal Production</h2>
+
+    <div class="product">
+      <label>Cheese Pandesal (qty baked)</label>
+      <input type="number" id="cheeseQty" min="0">
+    </div>
+
+    <div class="product">
+      <label>Ube Pandesal (qty baked)</label>
+      <input type="number" id="ubeQty" min="0">
+    </div>
+
+    <button onclick="savePandesal()">Save Production</button>
+
+    <p id="pandesalResult"></p>
+  </section>
+
+  <!-- GROCERY INVENTORY -->
+  <section class="box">
+    <h2>Grocery Inventory</h2>
+
+    <div class="product">
+      <input type="text" id="groceryName" placeholder="Product name (e.g. Juice)">
+      <input type="number" id="groceryQty" placeholder="Quantity">
+      <button onclick="addGrocery()">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="groceryList"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
