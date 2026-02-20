@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  flex: 1;
+}
+
+button {
+  padding: 8px 15px;
+  background: #ffb347;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffa500;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
